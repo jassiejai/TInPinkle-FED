@@ -10,5 +10,5 @@
 
 <!-- index component that shows all the items both animal and plant -->
 <div class="mystic">
-  <button type="button" class="btn btn-secondary">Mystic Index</button>
+  <button (click)="showIndex()" type="button" class="btn btn-secondary">{{ mystic ?  "Index" : "Close"}}</button>
 </div>
