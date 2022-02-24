@@ -2,17 +2,13 @@
 <h4>Your one stop shop for all your Magical Needs</h4>
 
 
-<ng-container>
-<div class="choice">
+
 <!-- spellbook button to open the spellbook componenet -->
 <div class="spell">
-  <button type="button" class="btn btn-danger">Open SpellBook</button>
+  <button (click)="showSpell()" type="button" class="btn btn-danger">{{ spellBook ? "Check the SpellBook" : "SpellBook"}}</button>
 </div>
 
 <!-- index component that shows all the items both animal and plant -->
 <div class="mystic">
   <button type="button" class="btn btn-secondary">Mystic Index</button>
 </div>
-
-</div>
-</ng-container>
