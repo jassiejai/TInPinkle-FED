@@ -19,5 +19,12 @@ export class AppComponent {
 
   // Mystic index code
  
+  mystic : boolean = true
+
+  showIndex(){
+    
+    this.mystic = !this.mystic
+    
+  }
 
 }

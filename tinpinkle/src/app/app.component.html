@@ -11,6 +11,7 @@
 <h4 class="tag">Your one stop shop for all your Magical Needs</h4>
 
 <router-outlet></router-outlet>
+
 </div>
 </div>
 
@@ -21,10 +22,12 @@
 <!-- <app-spellbook></app-spellbook> -->
 
 
- <!-- index component that shows all the items both animal and plant 
+ <!-- index component that shows all the items both animal and plant -->
 <div class="mystic col-md-4">
-<app-index></app-index>
-</div>  -->
+    <a (click)="showIndex()"  routerLink="/index" routerLinkActive="activebutton"><button type="button" class="btn btn-secondary">{{ mystic ?  "Index" : "Close"}}</button></a>
+
+<!-- <app-index></app-index> -->
+</div>  
 
 
 
