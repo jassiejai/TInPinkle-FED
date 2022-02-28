@@ -1,7 +1,7 @@
 .rectangle1{
     position: absolute;
 width: 748px;
-height: 1024px;
+height: 780px;
 left: 692px;
 top: 0px;
 
@@ -12,9 +12,50 @@ background: #C4C4C4
 .rectangle2{
     position: absolute;
 width: 692px;
-height: 1024px;
+height: 780px;
 left: 0px;
 top: 0px;
 
 background: #FFFFFF;
+}
+
+.title{
+    position: absolute;
+    width: 493px;
+    height: 209px;
+    left: 9px;
+    top: 55px;
+    
+    // font-family: New Tegomin;
+    font-style: normal;
+    font-weight: normal;;
+    font-size: 144px;
+    line-height: 209px;
+// font-size: 144pt;
+}
+
+.tag{
+    position: absolute;
+width: 485px;
+height: 91px;
+left: 255px;
+top: 278px;
+}
+
+
+.spell{
+    position: absolute;
+width: 233px;
+height: 51px;
+left: 87px;
+top: 486px;
+
+}
+
+.mystic{
+    position: absolute;
+width: 233px;
+height: 51px;
+left: 368px;
+top: 583px;
 }
