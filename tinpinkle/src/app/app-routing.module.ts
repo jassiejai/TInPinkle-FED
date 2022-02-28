@@ -5,9 +5,11 @@ import { IndexComponent } from './index/index.component';
 import { SpellbookComponent } from './spellbook/spellbook.component';
 
 const routes: Routes = [
-  {
-    path : 'home', component : AppComponent,
-  }, {
+  // {
+  //   path : 'home', component : AppComponent,
+  // }
+  // ,
+   {
 
     path : 'spellbook', 
     component : SpellbookComponent,

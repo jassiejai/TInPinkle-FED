@@ -7,13 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IndexComponent implements OnInit {
 
-  mystic : boolean = true
+  // mystic : boolean = true
 
-  showIndex(){
+  // showIndex(){
     
-    this.mystic = !this.mystic
+  //   this.mystic = !this.mystic
     
-  }
+  // }
 
   constructor() { }
 
