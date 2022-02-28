@@ -1,5 +1,5 @@
 
-<div routerLink=" ">
+<div routerLink="home">
 <div class="rectangle1">
 
 </div>
@@ -10,12 +10,13 @@
   <h1 class="title">TinPinkle</h1>
 <h4 class="tag">Your one stop shop for all your Magical Needs</h4>
 
+<router-outlet></router-outlet>
+</div>
+</div>
 
-<div>
 
 <!-- spellbook button to open the spellbook componenet -->
 <div class="spell col-md-4">
-  <!-- <a class="button" routerLink="/spellbook" routerLinkActive="activebutton"><button class=" btn  btn-danger">SpellBook</button></a> -->
 <app-spellbook></app-spellbook>
 </div>
 
@@ -24,6 +25,5 @@
 <div class="mystic col-md-4">
 <app-index></app-index>
 </div>
-</div>
-</div>
-</div>
+
+

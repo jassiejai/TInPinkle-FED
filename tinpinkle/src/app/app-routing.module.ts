@@ -6,10 +6,10 @@ import { SpellbookComponent } from './spellbook/spellbook.component';
 
 const routes: Routes = [
   {
-    path : ' ', component : AppComponent,
+    path : 'home', component : AppComponent,
   }, {
 
-    path : 'spellbook ', 
+    path : 'spellbook', 
     component : SpellbookComponent,
 
     //create another componet that open to specific spell
@@ -19,7 +19,7 @@ const routes: Routes = [
   },
   {
 
-    path : 'index ', 
+    path : 'index', 
     component : IndexComponent,
 
     // create another component that shows the specific item being choosen and the information on it

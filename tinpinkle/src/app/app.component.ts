@@ -9,8 +9,13 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'tinpinkle';
 
-  // spellbook code
-  
+// spellbook button code
+  spellBook : boolean = true
+
+  showSpell(){
+    
+    this.spellBook = !this.spellBook
+  }
 
   // Mystic index code
  
