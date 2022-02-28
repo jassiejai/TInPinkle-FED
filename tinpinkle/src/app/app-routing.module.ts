@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
+import { IndexComponent } from './index/index.component';
 import { SpellbookComponent } from './spellbook/spellbook.component';
 
 const routes: Routes = [
@@ -12,6 +13,14 @@ const routes: Routes = [
 
     children : [{
       path: 'spellpage/:pageId' , component : SpellbookComponent
+    }]
+  },
+  {
+
+    path : 'index ', component : IndexComponent,
+
+    children : [{
+      path: 'index/:itemId' , component : IndexComponent
     }]
   }
 
