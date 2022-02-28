@@ -7,6 +7,7 @@ import { SpellbookComponent } from './spellbook/spellbook.component';
 import { IndexComponent } from './index/index.component';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { SlideshowComponent } from './slideshow/slideshow.component';
 
 
 
@@ -15,7 +16,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     SpellbookComponent,
     AppComponent,
     IndexComponent,
-    NavbarComponent
+    NavbarComponent,
+    SlideshowComponent
   ],
   imports: [
     CommonModule,

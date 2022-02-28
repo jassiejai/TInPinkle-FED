@@ -9,6 +9,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'tinpinkle';
 
+  home = true;
+
+
 // spellbook button code
   spellBook : boolean = true
 
