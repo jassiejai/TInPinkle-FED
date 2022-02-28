@@ -14,16 +14,17 @@
 </div>
 </div>
 
-
 <!-- spellbook button to open the spellbook componenet -->
 <div class="spell col-md-4">
-<app-spellbook></app-spellbook>
-</div>
+   <a (click)="showSpell()"  routerLink="/spellbook" routerLinkActive="activebutton"> <button type="button" class="btn btn-danger">{{ spellBook ? "Check the SpellBook" : "SpellBook"}}</button></a>
+  </div>
+<!-- <app-spellbook></app-spellbook> -->
 
 
-<!-- index component that shows all the items both animal and plant -->
+ <!-- index component that shows all the items both animal and plant 
 <div class="mystic col-md-4">
 <app-index></app-index>
-</div>
+</div>  -->
+
 
 
