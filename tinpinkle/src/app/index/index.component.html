@@ -13,7 +13,8 @@
      <a (click)="getPlants()"  routerLink="/index" routerLinkActive="activebutton"><button type="button" class="btn btn-secondary">Show Plants</button></a>
   </div>
 
-  <div class="animal">
+
+  <div class="animal" >
    <a (click)="getAnimals()"  routerLink="/index" routerLinkActive="activebutton"><button type="button" class="btn btn-primary">Show Animals</button></a>
 </div>
 
@@ -41,11 +42,12 @@
          <h3>{{j.name}}</h3>
         </div>
         <div class="row">
-          <div class="col-md-8">Power : {{j.power}}</div>
-          
+          <div class="col-md-4">Color <br>  {{j.color}}</div> 
+          <div class="col-md-4">Power <br> {{j.power}}</div>
+          <!-- <div class="col-md-2">Animal Type : {{j.animal_type}}</div> -->
         </div>
       </div>
-      <div class="col-md-4">Description : {{j.description}}</div>
+      <div class="col-md-4">Description <br><br> {{j.description}}</div>
     </div>
 
   </section>
@@ -60,12 +62,17 @@
       <h3>{{i.name}}</h3>
      </div>
      <div class="row">
-       <div class="col-md-2">Flower {{i.flower}}</div>
-       <div class="col-md-2">Stem  {{i.stem}}</div>
-       <div class="col-md-2">Root {{i.root}}</div>
+       <div class="col-md-8"> Can you use the Flower <br> {{i.flower}}</div>
+      
      </div>
+     <div class="row">
+      <div class="col-md-8">Can you use the Stem <br> {{i.stem}}</div>
+    </div>
+    <div class="row">
+      <div class="col-md-8">Can you use the Root <br> {{i.root}}</div>
+    </div>
    </div>
-   <div class="col-md-4">Description : {{i.description}}</div>
+   <div class="col-md-4">Description <br><br> {{i.description}}</div>
  </div>
 
      </section>

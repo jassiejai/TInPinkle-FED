@@ -33,8 +33,6 @@ export class IndexComponent implements OnInit {
 
    getPlants(){
 
-    this.mystic = !this.mystic
-
     this.http.
     get('http://localhost:9092/api/plants').
     subscribe(response =>{
