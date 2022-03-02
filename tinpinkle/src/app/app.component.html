@@ -1,33 +1,17 @@
 <app-navbar></app-navbar>
+<app-home></app-home>
 
-<div class="rectangle1">
+<div >
   <!-- <app-slideshow ></app-slideshow> -->
 <router-outlet></router-outlet>
 </div>
 
-
-<div class="rectangle2">
-
-  <h1 class="title">TinPinkle</h1>
-<h4 class="tag">Your one stop shop for all your Magical Needs</h4>
+<app-navbar></app-navbar>
 
 
 
-</div>
-
-<!-- spellbook button to open the spellbook componenet -->
-<div class="spell col-md-4">
-   <a (click)="showSpell()"  routerLink="/spellbook" routerLinkActive="activebutton"> <button type="button" class="btn btn-danger">{{ spellBook ? "Check the SpellBook" : "SpellBook"}}</button></a>
-  </div>
-<!-- <app-spellbook></app-spellbook> -->
 
 
- <!-- index component that shows all the items both animal and plant -->
-<div class="mystic col-md-4">
-    <a (click)="showIndex()"  routerLink="/index" routerLinkActive="activebutton"><button type="button" class="btn btn-secondary">{{ mystic ?  "Index" : "Close"}}</button></a>
-
-<!-- <app-index></app-index> -->
-</div>  
 
 
 

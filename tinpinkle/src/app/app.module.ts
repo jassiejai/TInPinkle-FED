@@ -8,21 +8,31 @@ import { IndexComponent } from './index/index.component';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SlideshowComponent } from './slideshow/slideshow.component';
+import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './home/home.component';
+import { AnimalComponent } from './animal/animal.component';
+import { PlantComponent } from './plant/plant.component';
+
 
 
 
 @NgModule({
   declarations: [
-    SpellbookComponent,
-    AppComponent,
+     AppComponent,
+     SpellbookComponent,
     IndexComponent,
     NavbarComponent,
-    SlideshowComponent
+    SlideshowComponent,
+    HomeComponent,
+    AnimalComponent,
+    PlantComponent
   ],
   imports: [
     CommonModule,
     AppRoutingModule,
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
+
   ],
   providers:[],
   bootstrap : [AppComponent]

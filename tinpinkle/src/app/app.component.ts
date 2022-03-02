@@ -9,25 +9,24 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'tinpinkle';
 
-  home = true;
+  // spellbook button code
+spellBook : boolean = true
+
+showSpell(){
+  
+  this.spellBook = !this.spellBook
+}
+
+// Mystic index code
+
+mystic : boolean = true
+
+showIndex(){
+  
+  this.mystic = !this.mystic
+  
+}
 
 
-// spellbook button code
-  spellBook : boolean = true
-
-  showSpell(){
-    
-    this.spellBook = !this.spellBook
-  }
-
-  // Mystic index code
- 
-  mystic : boolean = true
-
-  showIndex(){
-    
-    this.mystic = !this.mystic
-    
-  }
 
 }

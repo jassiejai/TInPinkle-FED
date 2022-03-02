@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { IndexComponent } from './index/index.component';
 import { SpellbookComponent } from './spellbook/spellbook.component';
+import { AnimalComponent } from './animal/animal.component';
+import { PlantComponent } from './plant/plant.component';
 
 const routes: Routes = [
   // {
@@ -25,9 +27,14 @@ const routes: Routes = [
     component : IndexComponent,
 
     // create another component that shows the specific item being choosen and the information on it
-    // children : [{
-    //   path: 'index/:itemId' , component : IndexComponent
-    // }]
+    children : [{
+      path: 'index/:itemId' , component : PlantComponent
+    },
+    {
+      path: 'index/:itemId' , component : AnimalComponent
+    }
+  
+  ]
   }
 
 

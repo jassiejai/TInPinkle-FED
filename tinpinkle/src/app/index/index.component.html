@@ -7,73 +7,31 @@
 
 </div>
 
+<!-- <div class="mystic col-md-4">
+  <a (click)="ShowIndex()"  routerLink="/home" routerLinkActive="activebutton"><button type="button" class="btn btn-secondary">Home</button></a>
+
+</div>   -->
+
+<app-animal></app-animal>
+<app-plant></app-plant>
 
 
-<div class="plant">
-     <a (click)="getPlants()"  routerLink="/index" routerLinkActive="activebutton"><button type="button" class="btn btn-secondary">Show Plants</button></a>
-  </div>
 
 
-  <div class="animal" >
-   <a (click)="getAnimals()"  routerLink="/index" routerLinkActive="activebutton"><button type="button" class="btn btn-primary">Show Animals</button></a>
-</div>
-
-
-<!-- <section class="body" *ngIf = "item" >
-   <section *ngFor=" let i of item">
-   
-      <h3>{{i.name}}</h3>
-   <p> Description : {{i.description}}</p>
-   <p> Flower : {{i.flower}}</p>
-   <p> Stem : {{i.stem}}</p>
-   <p> Root : {{i.root}}</p>
-
-   
-     </section>
-   </section> -->
-
-
-  <section class="bod" *ngIf = "index" >
-<section *ngFor=" let j of index">
-
-   <div class="row">
-      <div class="col-md-8">
-        <div class="pb-3">
-         <h3>{{j.name}}</h3>
+   <!-- <body>
+    <div class="card-group pt-4 " >
+        <div class="card h-100 m-2 border border-0 "  *ngFor="let it of item; let i = index"> 
+          <a href="plant/{{item.id}}">
+          <div class="card-body">
+            <h5 class="card-title">{{it.name}}</h5>
+            <p class="card-text">{{it.description}} <br> Flower: {{it.flower}} Root :{{i.root}}</p>
+          </div>
+         
+          </a>
         </div>
-        <div class="row">
-          <div class="col-md-4">Color <br>  {{j.color}}</div> 
-          <div class="col-md-4">Power <br> {{j.power}}</div>
-          <!-- <div class="col-md-2">Animal Type : {{j.animal_type}}</div> -->
-        </div>
-      </div>
-      <div class="col-md-4">Description <br><br> {{j.description}}</div>
     </div>
-
-  </section>
-</section>
+  </body> -->
 
 
-<section class="body" *ngIf = "item" >
-   <section *ngFor=" let i of item">
-<div class="row">
-   <div class="col-md-8">
-     <div class="pb-3">
-      <h3>{{i.name}}</h3>
-     </div>
-     <div class="row">
-       <div class="col-md-8"> Can you use the Flower <br> {{i.flower}}</div>
-      
-     </div>
-     <div class="row">
-      <div class="col-md-8">Can you use the Stem <br> {{i.stem}}</div>
-    </div>
-    <div class="row">
-      <div class="col-md-8">Can you use the Root <br> {{i.root}}</div>
-    </div>
-   </div>
-   <div class="col-md-4">Description <br><br> {{i.description}}</div>
- </div>
 
-     </section>
-   </section>
+

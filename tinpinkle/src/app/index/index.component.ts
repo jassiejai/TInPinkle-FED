@@ -18,8 +18,6 @@ export class IndexComponent implements OnInit {
 
   item: any;
 
-  index: any;
-
 
   constructor(private http: HttpClient) { }
 
@@ -28,34 +26,6 @@ export class IndexComponent implements OnInit {
 
     this.mystic = !this.mystic
   }
-
-
-
-   getPlants(){
-
-    this.http.
-    get('http://localhost:9092/api/plants').
-    subscribe(response =>{
-
-      console.log(response);
-
-      this.item = response;
-      return response
-     })}
-
-     getAnimals(){
-       
-     this.http.
-     get('http://localhost:9092/api/animals').
-     subscribe(response =>{
- 
-       console.log(response);
- 
-       this.index = response;
-      //  JSON.stringify(response);
-       return response
-      })
-    }
   
 
   ngOnInit(): void {

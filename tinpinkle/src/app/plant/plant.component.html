@@ -1,0 +1,30 @@
+<div class="plant justify-content-center">
+    <a (click)="getPlants()"  routerLink="/index" routerLinkActive="activebutton"><button type="button" class="btn btn-secondary">Show Plants</button></a>
+ </div>
+
+
+
+ <section class="body" *ngIf = "item" >
+    <section *ngFor=" let i of item">
+ <div class="row">
+    <div class="col-md-8">
+      <div class="pb-3">
+       <h3 class="card-title">{{i.name}}</h3>
+      </div>
+      <div class="row">
+        <div class="col-md-8"> Can you use the Flower <br> {{i.flower}}</div>
+       
+      </div>
+      <div class="row">
+       <div class="col-md-8">Can you use the Stem <br> {{i.stem}}</div>
+     </div>
+     <div class="row">
+       <div class="col-md-8">Can you use the Root <br> {{i.root}}</div>
+     </div>
+    </div>
+    <div class="col-md-4">Description <br><br> {{i.description}}</div>
+  </div>
+ 
+      </section>
+    </section>
+
