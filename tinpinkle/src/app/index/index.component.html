@@ -1,9 +1,72 @@
-<p>Index Page</p>
+<div class="header">
+
+   <h1>All Things Mythical</h1>
+
+   <!-- <p>provice links when cliked open a box </p> -->
 
 
-<!-- <div class="mystic">
-     <a (click)="showIndex()"  routerLink="/index" routerLinkActive="activebutton"><button type="button" class="btn btn-secondary">{{ mystic ?  "Index" : "Close"}}</button></a>
-  </div> -->
+</div>
 
 
- 
+
+<div class="plant">
+     <a (click)="getPlants()"  routerLink="/index" routerLinkActive="activebutton"><button type="button" class="btn btn-secondary">Show Plants</button></a>
+  </div>
+
+  <div class="animal">
+   <a (click)="getAnimals()"  routerLink="/index" routerLinkActive="activebutton"><button type="button" class="btn btn-primary">Show Animals</button></a>
+</div>
+
+
+<!-- <section class="body" *ngIf = "item" >
+   <section *ngFor=" let i of item">
+   
+      <h3>{{i.name}}</h3>
+   <p> Description : {{i.description}}</p>
+   <p> Flower : {{i.flower}}</p>
+   <p> Stem : {{i.stem}}</p>
+   <p> Root : {{i.root}}</p>
+
+   
+     </section>
+   </section> -->
+
+
+  <section class="bod" *ngIf = "index" >
+<section *ngFor=" let j of index">
+
+   <div class="row">
+      <div class="col-md-8">
+        <div class="pb-3">
+         <h3>{{j.name}}</h3>
+        </div>
+        <div class="row">
+          <div class="col-md-8">Power : {{j.power}}</div>
+          
+        </div>
+      </div>
+      <div class="col-md-4">Description : {{j.description}}</div>
+    </div>
+
+  </section>
+</section>
+
+
+<section class="body" *ngIf = "item" >
+   <section *ngFor=" let i of item">
+<div class="row">
+   <div class="col-md-8">
+     <div class="pb-3">
+      <h3>{{i.name}}</h3>
+     </div>
+     <div class="row">
+       <div class="col-md-2">Flower {{i.flower}}</div>
+       <div class="col-md-2">Stem  {{i.stem}}</div>
+       <div class="col-md-2">Root {{i.root}}</div>
+     </div>
+   </div>
+   <div class="col-md-4">Description : {{i.description}}</div>
+ </div>
+
+     </section>
+   </section>
